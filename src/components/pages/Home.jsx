@@ -3,6 +3,7 @@ import axios from "axios";
 import SliderComponent from "./../SliderComponent";
 import CategoryBanner from "./../CategoryBanner";
 import "../Home.scss";
+import img from '../../images/products/baby/baby-dove.jpg'
 import { BannerData } from '../../server/banners';
 import { CategoriesData } from '../../server/categories';
 
@@ -29,6 +30,7 @@ function Home() {
   // }, []);
   return (
     <div className="body-section">
+      <img src={img} />
       <SliderComponent banner={BannerData} />
       {CategoriesData.map(
         (item) =>
