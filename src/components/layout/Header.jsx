@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-
+import { Link } from 'react-router-dom'
 import "./Header.scss";
 import Cart from "./Cart";
 import "./Cart.scss";
@@ -18,14 +18,17 @@ function Header() {
         <nav>
           <ul className="list-n">
             <li>
-              <a href="/" role="link">
+              <Link to='/'>Home</Link>
+              {/* <a href="/" role="link">
                 Home
-              </a>
+              </a> */}
             </li>
             <li>
-              <a href="/products" role="link">
+              <Link to='/products'>Products</Link>
+
+              {/* <a href="/products" role="link">
                 Products
-              </a>
+              </a> */}
             </li>
           </ul>
         </nav>
@@ -33,14 +36,16 @@ function Header() {
           <nav>
             <ul className="list-h">
               <li className="link">
-                <a href="/login" role="link">
+              <Link to='/login'>SignIn</Link>
+                {/* <a href="/login" role="link">
                   SignIn
-                </a>
+                </a> */}
               </li>
               <li className="link">
-                <a href="/register" role="link">
+              <Link to='/register'>Register</Link>
+                {/* <a href="/register" role="link">
                   Register
-                </a>
+                </a> */}
               </li>
             </ul>
           </nav>
