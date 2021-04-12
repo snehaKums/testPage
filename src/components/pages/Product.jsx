@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { CategoriesData } from 'server/categories';
-import { ProductData } from 'server/products';
+import { CategoriesData } from '/server/categories';
+import { ProductData } from '/server/products';
 import ProductList from "../ProductList";
 import ProductCard from "../ProductCard";
 
