@@ -1,5 +1,5 @@
 import Layout from './components/layout';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
@@ -17,15 +17,15 @@ function App() {
 
       <div className="App">
         <Layout>
-          <BrowserRouter basename={process.env.PUBLIC_URL+ '/'}>
+          <HashRouter>
             <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/products" exact component={Product} />
-              <Route path="/login" exact component={Login} />
-              <Route path="/register" exact component={Register} />
-              <Route path="/" render={() => <Redirect to="/" />} />
+              <Route path="/#/" exact component={Home} />
+              <Route path="/#/products" exact component={Product} />
+              <Route path="/#/login" exact component={Login} />
+              <Route path="/#/register" exact component={Register} />
+              <Route path="/#/" render={() => <Redirect to="/#/" />} />
             </Switch>
-          </BrowserRouter>
+          </HashRouter>
         </Layout>
 
 
