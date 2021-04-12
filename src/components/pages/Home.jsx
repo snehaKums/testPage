@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-// import { BannerData } from '../../../server/banners';
+// import { BannerData } from '../../';
 import SliderComponent from "./../SliderComponent";
 import CategoryBanner from "./../CategoryBanner";
 import "../Home.scss";
@@ -9,7 +9,7 @@ function Home() {
   const [banner, setBanner] = React.useState([]);
   const [categories, setCategories] = React.useState([]);
   React.useEffect(() => {
-    axios.get("/server/banners").then(
+    axios.get("../../server/banners").then(
       (res) => {
         setBanner(res.data);
       },
@@ -17,7 +17,7 @@ function Home() {
         console.error(err);
       }
     );
-    axios.get("/server/categories").then(
+    axios.get("../../server/categories").then(
       (res) => {
         setCategories(res.data);
       },
