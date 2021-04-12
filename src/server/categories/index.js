@@ -7,7 +7,7 @@ export const CategoriesData=[
     "order": 1,
     "imageUrl": "static/images/category/beverages.png",
     "id": "5b675e5e5936635728f9fc30",
-    "link":"/beverages"
+    "link":"/products"
   },
   {
     "name": "Bakery Cakes and Dairy",
@@ -17,7 +17,7 @@ export const CategoriesData=[
     "order": 2,
     "imageUrl": "static/images/category/bakery.png",
     "id": "5b6899123d1a866534f516de",
-    "link":"/bakery"
+    "link":"/products"
   },
   {
     "name": "Beauty and Hygiene",
@@ -27,7 +27,7 @@ export const CategoriesData=[
     "order": 3,
     "imageUrl": "static/images/category/beauty.png",
     "id": "5b68994e3d1a866534f516df",
-    "link":"/beauty"
+    "link":"/products"
 
   },
   {
@@ -38,7 +38,7 @@ export const CategoriesData=[
     "order": 4,
     "imageUrl": "static/images/category/baby.png",
     "id": "5b6899683d1a866534f516e0",
-    "link":"/baby"
+    "link":"/products"
   },
   {
     "name": "Seafood",
@@ -48,7 +48,7 @@ export const CategoriesData=[
     "order": 5,
     "imageUrl": "static/images/category/seafood.png",
     "id": "5b68997d3d1a866534f516e1",
-    "link":"/seaFood"
+    "link":"/products"
   },
   {
     "name": "Fruits & Vegetables",
@@ -58,6 +58,6 @@ export const CategoriesData=[
     "order": 6,
     "imageUrl": "static/images/category/fruits.png",
     "id": "5b6899953d1a866534f516e2",
-    "link":"/fruitsNveg"
+    "link":"/products"
   }
 ]
