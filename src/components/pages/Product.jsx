@@ -1,24 +1,12 @@
 import React from "react";
-import axios from "axios";
 import { useSelector } from "react-redux";
-import { CategoriesData } from '../../server/categories';
-import { ProductData } from '../../server/products';
+import { CategoriesData } from 'server/categories';
+import { ProductData } from 'server/products';
 import ProductList from "../ProductList";
 import ProductCard from "../ProductCard";
 
 function Product() {
-  // const [data, setData] = React.useState([]);
-  // const [categories, setCategories] = React.useState([]);
   const { filter } = useSelector((state) => state);
-
-  // React.useEffect(() => {
-  //   axios.get("http://localhost:5000/products").then((res) => {
-  //     setData(res.data);
-  //   });
-  //   axios.get("http://localhost:5000/categories").then((res) => {
-  //     setCategories(res.data);
-  //   });
-  // }, []);
   return (
     <main
       className="product container"

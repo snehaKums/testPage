@@ -19,16 +19,9 @@ function Header() {
           <ul className="list-n">
             <li>
               <Link to='/'>Home</Link>
-              {/* <a href="/" role="link">
-                Home
-              </a> */}
             </li>
             <li>
               <Link to='/products'>Products</Link>
-
-              {/* <a href="/products" role="link">
-                Products
-              </a> */}
             </li>
           </ul>
         </nav>
@@ -37,15 +30,9 @@ function Header() {
             <ul className="list-h">
               <li className="link">
               <Link to='/login'>SignIn</Link>
-                {/* <a href="/login" role="link">
-                  SignIn
-                </a> */}
               </li>
               <li className="link">
               <Link to='/register'>Register</Link>
-                {/* <a href="/register" role="link">
-                  Register
-                </a> */}
               </li>
             </ul>
           </nav>
