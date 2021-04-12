@@ -1,5 +1,5 @@
 import Layout from './components/layout';
-import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
@@ -9,6 +9,7 @@ import Login from './components/pages/Login';
 import Register from './components/pages/Register';
 import reducer from './store/reducer/reducer';
 import "./App.css"
+import { PageNotFound } from './PageNotFound';
 
 function App() {
   const store = createStore(reducer, composeWithDevTools());
@@ -17,15 +18,16 @@ function App() {
 
       <div className="App">
         <Layout>
-          <HashRouter basename='/'>
+          <BrowserRouter>
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/products" exact component={Product} />
               <Route path="/login" exact component={Login} />
               <Route path="/register" exact component={Register} />
               <Route path="/" render={() => <Redirect to="/" />} />
+              <Route component={PageNotFound} />
             </Switch>
-          </HashRouter>
+          </BrowserRouter>
         </Layout>
 
 
